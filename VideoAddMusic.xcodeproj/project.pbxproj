@@ -23,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		701154C61F31F5C40037A7C1 /* AreYouOK.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AreYouOK.mp3; sourceTree = "<group>"; };
+		705BD9FA1F346F89004BC1DE /* FLVideoBGM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLVideoBGM.h; sourceTree = "<group>"; };
 		708CAC021F3415CD00847696 /* FLAssetsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAssetsManager.h; sourceTree = "<group>"; };
 		708CAC031F3415CD00847696 /* FLAssetsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAssetsManager.m; sourceTree = "<group>"; };
 		708CAC041F3415CD00847696 /* FLVideoBGMManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLVideoBGMManager.h; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 				708CAC031F3415CD00847696 /* FLAssetsManager.m */,
 				708CAC041F3415CD00847696 /* FLVideoBGMManager.h */,
 				708CAC051F3415CD00847696 /* FLVideoBGMManager.m */,
+				705BD9FA1F346F89004BC1DE /* FLVideoBGM.h */,
 			);
 			path = FLVideoBGM;
 			sourceTree = "<group>";

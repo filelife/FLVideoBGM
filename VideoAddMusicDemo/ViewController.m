@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "FLAssetsManager.h"
-#import "FLVideoBGMManager.h"
+#import "FLVideoBGM.h"
 @interface ViewController ()
 @property (nonatomic, copy) NSString * outputFilePath;
 @property (nonatomic, strong) IBOutlet UILabel * lab;
@@ -37,9 +36,12 @@
             self.outputFilePath = resultOutputFilePath;
             _lab.text = @"Check album.";
             [FLAssetsManager checkAlbumBeforeSaveWithCompletionHandler:^(BOOL createNewCollection) {
+                
+                _lab.text = @"Saving.";
                 [FLAssetsManager saveVideoWithUrl:[NSURL URLWithString:self.outputFilePath]];
                 //You could delete origin video at here.
                 _lab.text = @"Success";
+                
             }];
             
         } else {
