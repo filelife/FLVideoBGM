@@ -10,16 +10,12 @@
 
 @interface FLAssetsManager : NSObject
 /*
- * @ Func:Course PHPhotolibrary require to choose a album before save asset.
- * @ Param
- *   completionHandler
- */
-+ (void)checkAlbumBeforeSaveWithCompletionHandler:(void(^)(BOOL createNewCollection))completionHandler;
-
-/*
  * @ Func:Save video
  * @ Param
  *   path : video path
  */
-+ (void)saveVideoWithUrl:(NSURL *)path;
++ (void)saveVideoWithUrl:(NSURL *)path CompletionHandler:( void(^)(NSString * response,BOOL success))completionHandler;
+
+
+
 @end

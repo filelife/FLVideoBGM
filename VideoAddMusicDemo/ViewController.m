@@ -34,16 +34,14 @@
         if(resultOutputFilePath) {
             // Saving success.
             self.outputFilePath = resultOutputFilePath;
-            _lab.text = @"Check album.";
-            [FLAssetsManager checkAlbumBeforeSaveWithCompletionHandler:^(BOOL createNewCollection) {
-                
-                _lab.text = @"Saving.";
-                [FLAssetsManager saveVideoWithUrl:[NSURL URLWithString:self.outputFilePath]];
-                //You could delete origin video at here.
-                _lab.text = @"Success";
-                
+            _lab.text = @"Saving.";
+            [FLAssetsManager saveVideoWithUrl:[NSURL URLWithString:self.outputFilePath] CompletionHandler:^(NSString *response, BOOL success) {
+                if(success) {
+                    _lab.text = @"Success";
+                } else {
+                    _lab.text = @"Failure";
+                }
             }];
-            
         } else {
             // Something wrong.
             NSLog(@"%@",errorInfo);
