@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                 = "FLVideoBGM"
-  s.version              = "1.0.1"
+  s.version              = "1.2.0"
   s.summary              = "This repository encapsulate a function for adding background music to a video."
   s.homepage             = "https://github.com/filelife/FLVideoBGM"
   s.license              = { :type => "MIT", :file => "LICENSE" }
